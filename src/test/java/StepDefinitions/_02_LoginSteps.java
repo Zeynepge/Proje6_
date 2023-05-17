@@ -33,8 +33,10 @@ public class _02_LoginSteps {
     }
 
     @Then("User should login successfully")
-    public void userShouldLoginSuccessfully() {
-        ln.veritfyContainsTextFunction(ln.accountSuccessText,"zeynep");
+    public void userShouldLoginSuccessfully(String firstName) {
+
+        String firstname=firstName;
+        ln.veritfyContainsTextFunction(ln.accountSuccessText,firstname);
 
     }
 }

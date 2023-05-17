@@ -24,15 +24,15 @@ public class _01_RegisterSteps {
     }
     @Then("Create account")
     public void createAccount() {
-        dc.sendKeysFunction(dc.firstName,"zeynep");
-        dc.sendKeysFunction(dc.lastName,"gedik");
+        dc.sendKeysFunction(dc.firstName,"ayse");
+        dc.sendKeysFunction(dc.lastName,"karaman");
         dc.sendKeysFunction(dc.Address,"köprübasi");
         dc.sendKeysFunction(dc.city,"Rodgau");
         dc.sendKeysFunction(dc.state,"Germany");
         dc.sendKeysFunction(dc.zipCode,"25300");
         dc.sendKeysFunction(dc.Phone,"5441233212");
         dc.sendKeysFunction(dc.SSN,"23456");
-        dc.sendKeysFunction(dc.username,"ZGedik");
+        dc.sendKeysFunction(dc.username,"akaraman");
         dc.sendKeysFunction(dc.password,"123456");
         dc.sendKeysFunction(dc.confirm,"123456");
         dc.clickFunction(dc.registerButton);
@@ -40,6 +40,6 @@ public class _01_RegisterSteps {
 
     @And("Success message should be displayed")
     public void successMessageShouldBeDisplayed() {
-        dc.veritfyContainsTextFunction(dc.successText,"ZGedik");
+        dc.veritfyContainsTextFunction(dc.successText,"akaraman");
     }
 }

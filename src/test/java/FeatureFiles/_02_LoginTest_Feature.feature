@@ -11,6 +11,6 @@ Feature: Login
 
     Examples:
       | username | password | firstName |
-      | ZGedik   | 123456   | zeynep    |
-      | zehra    | 123456     | zehra     |
+      | akaraman | 123456   | ayse      |
+      | zehra    | 123456   | zehra     |
       | zeynep   | zeynep11 | zeynep    |
